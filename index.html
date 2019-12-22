@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>С Новым годом</title>
+	<style type="text/css">
+		body {
+			background-image: url(http://www.fullhdoboi.ru/_ph/22/25185497.jpg?1575231171);
+		}
+			.container {
+			display: flex;
+			height: 500px;
+			width: 800px;
+			position: absolute;
+			left: 20%;
+			top: 100px;
+			box-shadow: 10px 10px 20px #152727;
+		}
+		.item {
+			flex-basis: 33.3%;
+			max-height: 500px;
+			overflow: hidden;
+			opacity: 0.7;
+			position: relative;
+		}
+		.item:hover {
+			flex-basis: 110%;
+			transition-duration: 0.5s;
+			border: 2px #243E3B solid;
+			opacity: 1;
+		}
+		.item:hover span{
+			opacity: 1;
+			transition-duration: 3s;
+		}
+		span {
+			position: absolute;
+			font-size: 50px;
+			font-family: Segoe Print, cursive;
+			text-shadow: 2px 2px #31504B;
+			color: white;
+			opacity: 0;
+			bottom: 10px;
+			left: 250px;
+		}
+		p {
+			position: absolute;
+			font-size: 55px;
+			font-family: Segoe Print, cursive;
+			text-shadow: 2px 2px #31504B;
+			color: white;
+			left: 230px;
+			top: -60px;
+			opacity: 0.8;
+		}
+
+	</style>
+</head>
+<body>
+<p>С наступающим Новым годом!<p>
+<div class="container">
+	<div class="item"><span>Happy</span><img src="https://cdn.pixabay.com/photo/2016/11/14/09/16/new-years-eve-1822984_960_720.jpg" height="500px"></div>
+	<div class="item"><span>New</span><img src="https://cdn.pixabay.com/photo/2017/11/20/14/01/kitten-2965641_960_720.jpg" height="500px"></div>
+	<div class="item"><span>Year!</span><img src="https://cdn.pixabay.com/photo/2016/11/14/09/14/new-years-eve-1822979_960_720.jpg" height="500px"></div>
+</div>
+</body>
+</html>
